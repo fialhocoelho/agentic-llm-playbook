@@ -1,0 +1,14 @@
+# Core ML/Scientific Computing
+torch>=2.0.0
+numpy>=1.24.0
+tqdm>=4.65.0
+
+# Jupyter and Visualization
+jupyter>=1.0.0
+ipykernel>=6.25.0
+matplotlib>=3.7.0
+
+# Development Tools
+pytest>=7.4.0
+ruff>=0.1.0
+pre-commit>=3.3.0
