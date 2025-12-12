@@ -6,10 +6,10 @@ import torch
 def get_device(prefer_cuda: bool = True) -> torch.device:
     """
     Get the best available device for training/inference.
-    
+
     Args:
         prefer_cuda: If True, use CUDA if available
-        
+
     Returns:
         torch.device: The selected device
     """
