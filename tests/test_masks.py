@@ -1,7 +1,7 @@
 """Tests for attention masking functionality."""
 
 import torch
-from src.llm_journey.models import ScaledDotProductAttention
+from llm_journey.models import ScaledDotProductAttention
 
 
 def test_attention_with_causal_mask():

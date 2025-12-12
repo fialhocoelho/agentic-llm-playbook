@@ -23,6 +23,11 @@ Thank you for your interest in contributing to the agentic-llm-playbook! This pr
    make venv
    make setup
    ```
+   
+   This will:
+   - Create a virtual environment in `venv/`
+   - Install all dependencies from `requirements.txt`
+   - Install the package in editable mode (`pip install -e .`)
 
 3. **Install the Jupyter kernel (optional, for notebook development):**
    ```bash

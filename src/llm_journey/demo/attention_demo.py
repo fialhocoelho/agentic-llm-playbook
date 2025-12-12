@@ -1,15 +1,9 @@
 """Demo of attention mechanism visualization."""
 
-import sys
-from pathlib import Path
-
-# Add project root to path
-sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent))
-
 import torch
 import matplotlib.pyplot as plt
-from src.llm_journey.models import ScaledDotProductAttention
-from src.llm_journey.utils import set_seed
+from llm_journey.models import ScaledDotProductAttention
+from llm_journey.utils import set_seed
 
 
 def visualize_attention():

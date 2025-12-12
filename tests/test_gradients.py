@@ -1,7 +1,7 @@
 """Tests for gradient flow through model components."""
 
 import torch
-from src.llm_journey.models import (
+from llm_journey.models import (
     ScaledDotProductAttention,
     MultiHeadAttention,
     TransformerBlock,

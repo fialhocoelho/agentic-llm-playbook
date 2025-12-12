@@ -27,6 +27,7 @@ venv:
 setup: venv
 	$(PIP) install --upgrade pip
 	$(PIP) install -r requirements.txt
+	$(PIP) install -e .
 	@echo "Dependencies installed."
 
 kernel: setup
