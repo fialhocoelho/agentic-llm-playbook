@@ -1,0 +1,24 @@
+Once upon a time, in a land far away, there lived a curious young apprentice named Alex.
+Alex loved to learn about the mysteries of language and how words could be woven together
+to create meaning. Every day, Alex would practice writing and reading, trying to understand
+the patterns that made sentences flow naturally.
+
+One day, Alex discovered the fascinating world of transformers and attention mechanisms.
+These magical tools could look at all the words in a sentence at once and figure out which
+ones were most important for understanding the meaning. It was like having a thousand eyes
+that could see connections between distant words.
+
+The apprentice learned that attention wasn't just about looking at words—it was about
+understanding relationships. Just as a musician hears harmonies between notes, the attention
+mechanism found harmonies between words. Some words naturally belonged together, like "bread"
+and "butter" or "thunder" and "lightning."
+
+As Alex practiced more, the patterns became clearer. Language had structure, rhythm, and rules
+that could be learned. With enough examples and careful attention, even the most complex
+sentences could be understood. The journey of learning was just beginning, and there were
+countless more mysteries to explore in the realm of language and meaning.
+
+This tiny corpus serves as a playground for understanding how language models learn patterns
+from text. Each word, each character contributes to the model's understanding of how language
+works. Through repetition and variation, the model discovers the statistical regularities
+that govern how we communicate.
