@@ -1,13 +1,4 @@
 # agentic-llm-playbook
-**agentic-llm-playbook** is a 4-week, build-first roadmap for modern LLM work—covering Transformers from scratch, training fundamentals, post-training (DPO/RLHF/GRPO), and agentic RAG with memory and evaluation. It’s in active development :rocket:
-
-This repository is a 4-week, build-first playbook for modern LLM work — Transformers → post-training → agentic systems → evaluation.
-It is in active development and currently focused on Week 1.
-
-IMPORTANT: Create README.md with the EXACT content below, copied verbatim (do not rewrite, do not paraphrase, do not change tone, headings, or wording). Only ensure markdown formatting is preserved.
-
----BEGIN README.md---
-# agentic-llm-playbook
 A 4-week, build-first playbook for modern LLM work — **Transformers → post-training → agentic systems → evaluation**.
 
 This repo is **in active development**. Right now I’m in **Week 1**.
