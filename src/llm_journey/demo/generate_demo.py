@@ -1,6 +1,11 @@
 """Demo of text generation with a simple model."""
 
-import torch
+import sys
+from pathlib import Path
+
+# Add project root to path
+sys.path.insert(0, str(Path(__file__).parent.parent.parent.parent))
+
 from src.llm_journey.data import SimpleTokenizer
 from src.llm_journey.utils import set_seed
 
@@ -40,7 +45,7 @@ def generate_text_demo():
     seq_len = 10
     d_model = 64
 
-    print(f"\nExample tensor shapes during generation:")
+    print("\nExample tensor shapes during generation:")
     print(f"  Input tokens: ({batch_size}, {seq_len})")
     print(f"  Embedded input: ({batch_size}, {seq_len}, {d_model})")
     print(f"  After transformer: ({batch_size}, {seq_len}, {d_model})")

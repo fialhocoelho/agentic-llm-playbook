@@ -73,3 +73,8 @@ checkpoints/
 *.pt
 *.pth
 *.ckpt
+
+# Generated files
+*.png
+*.jpg
+*.jpeg

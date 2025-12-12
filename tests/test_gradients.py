@@ -1,6 +1,5 @@
 """Tests for gradient flow through model components."""
 
-import pytest
 import torch
 from src.llm_journey.models import (
     ScaledDotProductAttention,
@@ -112,5 +111,6 @@ def test_gradient_accumulation():
     for name, param in mha.named_parameters():
         accumulated_grad = param.grad
         first_grad = first_grads[name]
-        assert not torch.allclose(accumulated_grad, first_grad), \
+        assert not torch.allclose(accumulated_grad, first_grad), (
             f"Gradient for {name} did not accumulate"
+        )

@@ -13,9 +13,7 @@ class TransformerBlock(nn.Module):
     3. Layer normalization and residual connections
     """
 
-    def __init__(
-        self, d_model: int, num_heads: int, d_ff: int, dropout: float = 0.1
-    ):
+    def __init__(self, d_model: int, num_heads: int, d_ff: int, dropout: float = 0.1):
         """
         Initialize the transformer block.
 

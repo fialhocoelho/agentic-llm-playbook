@@ -89,7 +89,9 @@ class MultiHeadAttention(nn.Module):
 
         self.attention = ScaledDotProductAttention(dropout)
 
-    def forward(self, query: torch.Tensor, key: torch.Tensor, value: torch.Tensor, mask=None):
+    def forward(
+        self, query: torch.Tensor, key: torch.Tensor, value: torch.Tensor, mask=None
+    ):
         """
         Apply multi-head attention.
 
@@ -105,9 +107,17 @@ class MultiHeadAttention(nn.Module):
         batch_size = query.size(0)
 
         # Linear projections and reshape to (batch, heads, seq_len, d_k)
-        Q = self.W_q(query).view(batch_size, -1, self.num_heads, self.d_k).transpose(1, 2)
+        Q = (
+            self.W_q(query)
+            .view(batch_size, -1, self.num_heads, self.d_k)
+            .transpose(1, 2)
+        )
         K = self.W_k(key).view(batch_size, -1, self.num_heads, self.d_k).transpose(1, 2)
-        V = self.W_v(value).view(batch_size, -1, self.num_heads, self.d_k).transpose(1, 2)
+        V = (
+            self.W_v(value)
+            .view(batch_size, -1, self.num_heads, self.d_k)
+            .transpose(1, 2)
+        )
 
         # Apply attention
         x, _ = self.attention(Q, K, V, mask)
